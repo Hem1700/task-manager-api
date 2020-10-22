@@ -91,7 +91,7 @@ router.patch('/tasks/:id' , auth ,async(req , res)=>{
        await task.save() 
        res.send(task)
     }catch(e){
-        res.status(400).send(e)
+        res.status(400)
     }
 })
 
